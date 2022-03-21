@@ -69,12 +69,14 @@ const TodoList = () => {
         </Heading>
         <Form onSubmit={addTodoEvent}>
           <Input
+            outline="none"
             borderRightRadius={'none'}
             _focus={{ outline: 'none' }}
             value={input}
             onChange={(e) => setInput(e.target.value)}
           />
           <Button
+            outline="none"
             borderLeft="none"
             bg="whiteAlpha.500"
             borderLeftRadius={'none'}

@@ -99,6 +99,7 @@ const Todo = ({ todo }) => {
         <IconButton
           aria-label={isEditing ? 'confirm edit' : 'Start editing todo'}
           icon={isEditing ? <AiOutlineLike /> : <AiOutlineEdit />}
+          bg="whiteAlpha.200"
           _hover={{ bg: 'whiteAlpha.500' }}
           color="blue.200"
           onClick={isEditing ? editSumbitEvent : onEditTodo}
@@ -113,6 +114,7 @@ const Todo = ({ todo }) => {
               <AiOutlineCheck />
             )
           }
+          bg="whiteAlpha.200"
           _hover={{ bg: 'whiteAlpha.500' }}
           color="green.200"
           onClick={() => onToggleCompleted(todo.id)}
@@ -121,6 +123,7 @@ const Todo = ({ todo }) => {
         <IconButton
           aria-label="Delete todo"
           icon={<AiOutlineDelete />}
+          bg="whiteAlpha.200"
           _hover={{ bg: 'whiteAlpha.500' }}
           color="purple.300"
           onClick={() => onDeleteItem(todo.id)}
